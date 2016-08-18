@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+
+function App() {
+  return React.createElement('div', null, 'I am a component' );
+}
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    React.createElement(App),
+    document.getElementById('root')
 );
