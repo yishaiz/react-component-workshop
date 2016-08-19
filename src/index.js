@@ -5,19 +5,23 @@ const Recipe = ({name}) => (
     <li>{name}</li>
 );
 
-/*
-const Recipe = (props) => (
-    <li>{props.name}</li>
-);
-*/
+const recipes = ["Waffel", "Omellete", "use an array"];
+
 
 const App = () =>
     (
         <div>
             <ul>
+                {
+                    recipes.map((recipe) => <Recipe name={recipe} />
+                    )
+                }
+
+                {/*
                 <Recipe name="Waffle"/>
                 <Recipe name="Omelette"/>
                 <Recipe name="Bread"/>
+                */}
             </ul>
         </div>
     );
