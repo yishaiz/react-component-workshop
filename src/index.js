@@ -7,23 +7,22 @@ const Recipe = ({name}) => (
 
 const recipes = ["Waffel", "Omellete", "use an array"];
 
+const Recipes = ({recipes}) => (
+    <ul>
+        {
+            recipes.map(recipe => <Recipe name={recipe}
+                                          key={recipe} />
+            )
+        }
+    </ul>
+);
+
 const App = () =>
     (
         <div>
-            <ul>
-                {
-                    recipes.map(recipe => <Recipe name={recipe}
-                                                  key={recipe} />
-
-                    )
-                }
-
-
-            </ul>
+            <Recipes recipes={recipes}/>
         </div>
     );
-
-//recipes.map((recipe) => <Recipe name={recipe} />
 
 ReactDOM.render(
     React.createElement(App),
