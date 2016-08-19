@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Recipe from './recipe';
 
+/*
 const Recipe = ({name}) => (
     <li>{name}</li>
 );
+*/
 
-const recipes = ["Waffel", "Omellete", "use an array"];
+const recipes = ["Waffel", "Omellete", "use import from other file"];
 
 const Recipes = ({recipes}) => (
     <ul>
