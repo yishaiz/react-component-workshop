@@ -1,24 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Recipe from './recipe';
+import Recipes from './recipes';
 
-/*
-const Recipe = ({name}) => (
-    <li>{name}</li>
-);
-*/
-
-const recipes = ["Waffel", "Omellete", "use import from other file"];
-
-const Recipes = ({recipes}) => (
-    <ul>
-        {
-            recipes.map(recipe => <Recipe name={recipe}
-                                          key={recipe} />
-            )
-        }
-    </ul>
-);
+const recipes = ["Waffel", "Omellete", "use import from other file (2)"];
 
 const App = () =>
     (
