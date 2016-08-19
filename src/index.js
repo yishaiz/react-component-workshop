@@ -12,7 +12,8 @@ const App = () =>
         <div>
             <ul>
                 {
-                    recipes.map(recipe => <Recipe name={recipe} />
+                    recipes.map(recipe => <Recipe name={recipe}
+                                                  key={recipe} />
 
                     )
                 }
