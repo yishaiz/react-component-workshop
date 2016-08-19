@@ -12,18 +12,17 @@ const App = () =>
         <div>
             <ul>
                 {
-                    recipes.map((recipe) => <Recipe name={recipe} />
+                    recipes.map(recipe => <Recipe name={recipe} />
+
                     )
                 }
 
-                {/*
-                <Recipe name="Waffle"/>
-                <Recipe name="Omelette"/>
-                <Recipe name="Bread"/>
-                */}
+
             </ul>
         </div>
     );
+
+//recipes.map((recipe) => <Recipe name={recipe} />
 
 ReactDOM.render(
     React.createElement(App),
