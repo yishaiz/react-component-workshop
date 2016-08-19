@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Recipe = () => (
-    <h3>A Recipe</h3>
+const Recipe = (props) => (
+    <li>{props.name}</li>
 );
 
 const App = () =>
     (
         <div>
-            <Recipe/>
+            <ul>
+                <Recipe name="Waffle"/>
+                <Recipe name="Omelette"/>
+                <Recipe name="Bread"/>
+            </ul>
         </div>
     );
 
