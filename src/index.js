@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const Recipe = ({name}) => (
+    <li>{name}</li>
+);
+
+/*
 const Recipe = (props) => (
     <li>{props.name}</li>
 );
+*/
 
 const App = () =>
     (
