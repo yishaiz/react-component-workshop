@@ -7,7 +7,6 @@ const Recipe = ({name}) => (
 
 const recipes = ["Waffel", "Omellete", "use an array"];
 
-
 const App = () =>
     (
         <div>
