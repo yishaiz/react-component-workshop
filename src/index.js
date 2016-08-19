@@ -10,12 +10,6 @@ class App extends React.Component{
         super();
 
         this.state = {recipes};
-
-        setTimeout(() => {
-            // recipes.push('Shakshuka')
-            recipes: this.state.recipes.concat('Shakshuka')
-        },1500);
-
     }
 
     render(){
