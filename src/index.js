@@ -16,6 +16,14 @@ class App extends React.Component {
          };
          */
 
+        setTimeout(
+            ()=> {
+                // recipes.push("Shakshuka")
+                this.setState ({
+                    recipes: this.state.recipes.concat("Shakshuka")
+                })
+            }, 1500
+        );
 
 
     }
