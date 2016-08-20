@@ -2,23 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Recipes from './recipes';
 
-let recipes = ["Waffel", "Omellete", "use state"];
+const recipes = ["Waffel", "Omellete", "use state"];
 
-class App extends React.Component{
-    constructor(){
+class App extends React.Component {
+    constructor() {
         super();
 
         this.state = {recipes};
 
-        setTimeout(() => {
-            // recipes.push('Shakshuka')
-            recipes: this.state.recipes.concat('Shakshuka')
-            // alert(111);
-        },1500);
+        /*
+         this.state = {
+         recipes : recipes
+         };
+         */
+
+
+
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <Recipes recipes={this.state.recipes}/>
             </div>
