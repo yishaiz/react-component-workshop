@@ -10,15 +10,10 @@ class App extends React.Component {
 
         this.state = {recipes};
 
-        /*
-         this.state = {
-         recipes : recipes
-         };
-         */
+        this.addRecipe = this.addRecipe.bind(this)
 
         setTimeout(
             ()=> {
-                // recipes.push("Shakshuka")
                 this.setState({
                     recipes: this.state.recipes.concat("Shakshuka")
                 })
@@ -50,7 +45,8 @@ class App extends React.Component {
             <div>
                 <Recipes recipes={this.state.recipes}/>
 
-                <form onSubmit={this.addRecipe.bind(this)}>
+                {/*<form onSubmit={this.addRecipe.bind(this)}>*/}
+                <form onSubmit={this.addRecipe}>
                     <input type="text" ref="recipeNameInput"/>
                     <button>Add Recipe</button>
                 </form>
