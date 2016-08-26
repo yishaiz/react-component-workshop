@@ -31,7 +31,8 @@ class App extends React.Component {
         console.log('new value', recipeName);
 
         this.setState({
-            recipes: this.state.recipes.concat(recipeName)
+            // recipes: this.state.recipes.concat(recipeName)
+            recipes: [...this.state.recipes, recipeName]
         });
 
         this.refs.recipeNameInput.value = '';
