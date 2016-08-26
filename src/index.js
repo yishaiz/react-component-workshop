@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Recipes from './recipes';
 
-const recipes = ["Waffel", "Omellete", "use state"];
+const recipes = ["Waffel", "Omellete"];
 
 class App extends React.Component {
     constructor() {
@@ -22,13 +22,10 @@ class App extends React.Component {
 
     }
 
-
     addRecipe(event) {
 
         event.preventDefault();
 
-        // const value= this.refs.recipeNameInput.value;
-        // const {value}= this.refs.recipeNameInput ;
         const {value: recipeName}= this.refs.recipeNameInput;
 
         console.log('new value', recipeName);
@@ -45,7 +42,6 @@ class App extends React.Component {
             <div>
                 <Recipes recipes={this.state.recipes}/>
 
-                {/*<form onSubmit={this.addRecipe.bind(this)}>*/}
                 <form onSubmit={this.addRecipe}>
                     <input type="text" ref="recipeNameInput"/>
                     <button>Add Recipe</button>
@@ -54,6 +50,12 @@ class App extends React.Component {
             </div>
         )
     }
+
+
+    componentDidMount() {
+        console.log('I am mounted ! - App')
+    }
+
 }
 
 ReactDOM.render(
