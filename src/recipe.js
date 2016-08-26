@@ -27,8 +27,8 @@ class Recipe extends React.Component {
         )
     }
 
-    componentWillMount() {
-        console.log('I will mount - Recipe')
+    componentDidMount() {
+        console.log('I am mounted ! - Recipe')
     }
 
     componentDidMount() {
